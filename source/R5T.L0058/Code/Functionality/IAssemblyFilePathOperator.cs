@@ -9,7 +9,8 @@ using R5T.T0180;
 namespace R5T.L0058
 {
     [FunctionalityMarker]
-    public partial interface IAssemblyFilePathOperator : IFunctionalityMarker
+    public partial interface IAssemblyFilePathOperator : IFunctionalityMarker,
+        L0053.IAssemblyFilePathOperator
     {
         public PairedAssemblyXmlDocumentionFilePaths Get_PairedAssemblyXmlDocumentationFilePaths(
             IDirectoryPath directoryPath)
